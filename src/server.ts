@@ -1,7 +1,7 @@
-import { Hono } from 'hono'
-import { AlbumController, ArtistController, SearchController, SongController } from '#modules/index'
+﻿import { AlbumController, ArtistController, SearchController, SongController } from '#modules/index'
 import { PlaylistController } from '#modules/playlists/controllers'
 import { App } from './app'
+import { getRequestListener } from '@hono/node-server'
 
 const app = new App([
   new SearchController(),
@@ -11,4 +11,4 @@ const app = new App([
   new PlaylistController()
 ]).getApp()
 
-export default app
+export default getRequestListener(app.fetch)
