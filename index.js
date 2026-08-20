@@ -16498,11 +16498,6 @@ var require_lib = __commonJS((exports, module) => {
   require_util();
 });
 
-// node_modules/hono/dist/adapter/vercel/handler.js
-var handle = (app) => (req) => {
-  return app.fetch(req);
-};
-
 // node_modules/@asteasolutions/zod-to-openapi/dist/index.cjs
 function __rest(s, e) {
   var t = {};
@@ -27699,7 +27694,7 @@ var app = new App([
 var server_default = app;
 
 // index.ts
-var jiosaavn_api_main_default = handle(server_default);
+var jiosaavn_api_main_default = server_default;
 export {
   jiosaavn_api_main_default as default
 };
