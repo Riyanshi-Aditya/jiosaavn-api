@@ -1,5 +1,4 @@
+import { handle } from 'hono/vercel'
 import app from '../src/server'
 
-export default {
-  fetch: app.fetch
-}
+export default handle(app)
