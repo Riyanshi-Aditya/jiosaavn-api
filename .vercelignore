@@ -1,10 +1,4 @@
-﻿src
-node_modules
+﻿node_modules
 trace.txt
-assets
-*.ts
-*.config.ts
-*.config.js
-vitest.config.ts
 *.log
 *.mp4
