@@ -6,25 +6,9 @@
   "license": "MIT",
   "repository": "https://github.com/sumitkolhe/jiosaavn-api",
   "author": "Sumit Kolhe",
-  "main": "dist/server.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "exports": {
-    "require": "./dist/index.js",
-    "import": "./dist/index.js"
-  },
-  "sideEffects": false,
   "imports": {
-    "#modules/*": {
-      "types": "./src/modules/*/index.d.ts",
-      "production": "./dist/modules/*/index.js",
-      "default": "./src/modules/*/"
-    },
-    "#common/*": {
-      "types": "./src/common/*/index.d.ts",
-      "production": "./dist/common/*/index.js",
-      "default": "./src/common/*/"
-    }
+    "#modules/*": "./src/modules/*",
+    "#common/*": "./src/common/*"
   },
   "scripts": {
     "dev": "bun run --hot src/server.ts",

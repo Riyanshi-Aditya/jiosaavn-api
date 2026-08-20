@@ -1,0 +1,8 @@
+﻿node_modules
+trace.txt
+.git
+.github
+assets
+dist
+*.log
+*.mp4
