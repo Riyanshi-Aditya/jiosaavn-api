@@ -37,7 +37,7 @@ export class App {
 
   private initializeSwaggerUI() {
     this.app.doc31('/swagger', (c) => {
-      const { protocol: urlProtocol, hostname, port } = new URL(c.req.url)
+      const { protocol: urlProtocol, hostname, port } = new URL(c.req.url, 'http://localhost')
       const protocol = c.req.header('x-forwarded-proto') ? `${c.req.header('x-forwarded-proto')}:` : urlProtocol
 
       return {
