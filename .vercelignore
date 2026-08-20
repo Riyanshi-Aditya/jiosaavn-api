@@ -1,8 +1,11 @@
-﻿node_modules
-trace.txt
-.git
-.github
-assets
+﻿src
+node_modules
 dist
+trace.txt
+assets
+*.ts
+*.config.ts
+*.config.js
+vitest.config.ts
 *.log
 *.mp4
