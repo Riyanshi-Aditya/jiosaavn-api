@@ -24,6 +24,7 @@ export class App {
     routes.forEach((route) => {
       route.initRoutes()
       this.app.route('/api', route.controller)
+      this.app.route('/', route.controller)
     })
 
     this.app.route('/', Home)
