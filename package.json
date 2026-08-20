@@ -6,7 +6,6 @@
   "license": "MIT",
   "repository": "https://github.com/sumitkolhe/jiosaavn-api",
   "author": "Sumit Kolhe",
-  "main": "dist/server.js",
   "imports": {
     "#modules/*": "./src/modules/*",
     "#common/*": "./src/common/*"
