@@ -1,6 +1,5 @@
 ﻿src
 node_modules
-dist
 trace.txt
 assets
 *.ts
