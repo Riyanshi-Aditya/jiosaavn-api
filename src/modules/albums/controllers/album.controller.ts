@@ -15,7 +15,7 @@ export class AlbumController implements Routes {
   public initRoutes() {
     this.controller.openapi(
       createRoute({
-        method: 'get',
+        method: 'get' as const,
         path: '/albums',
         tags: ['Album'],
         summary: 'Retrieve an album by ID or link',

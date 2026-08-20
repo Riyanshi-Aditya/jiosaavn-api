@@ -18,7 +18,7 @@ export class SongController implements Routes {
   public initRoutes() {
     this.controller.openapi(
       createRoute({
-        method: 'get',
+        method: 'get' as const,
         path: '/songs',
         tags: ['Songs'],
         summary: 'Retrieve songs by ID or link',
@@ -85,7 +85,7 @@ export class SongController implements Routes {
 
     this.controller.openapi(
       createRoute({
-        method: 'get',
+        method: 'get' as const,
         path: '/songs/{id}',
         tags: ['Songs'],
         summary: 'Retrieve song by ID',
@@ -134,7 +134,7 @@ export class SongController implements Routes {
 
     this.controller.openapi(
       createRoute({
-        method: 'get',
+        method: 'get' as const,
         path: '/songs/{id}/suggestions',
         tags: ['Songs'],
         summary: 'Retrieve song suggestions',

@@ -16,7 +16,7 @@ export class ArtistController implements Routes {
   public initRoutes() {
     this.controller.openapi(
       createRoute({
-        method: 'get',
+        method: 'get' as const,
         path: '/artists',
         tags: ['Artists'],
         summary: 'Retrieve artists by ID or link',
@@ -115,7 +115,7 @@ export class ArtistController implements Routes {
 
     this.controller.openapi(
       createRoute({
-        method: 'get',
+        method: 'get' as const,
         path: '/artists/{id}',
         tags: ['Artists'],
         summary: 'Retrieve artist by ID',
@@ -211,7 +211,7 @@ export class ArtistController implements Routes {
 
     this.controller.openapi(
       createRoute({
-        method: 'get',
+        method: 'get' as const,
         path: '/artists/{id}/songs',
         tags: ['Artists'],
         summary: `Retrieve artist's songs`,
@@ -295,7 +295,7 @@ export class ArtistController implements Routes {
 
     this.controller.openapi(
       createRoute({
-        method: 'get',
+        method: 'get' as const,
         path: '/artists/{id}/albums',
         tags: ['Artists'],
         summary: `Retrieve artist's albums`,

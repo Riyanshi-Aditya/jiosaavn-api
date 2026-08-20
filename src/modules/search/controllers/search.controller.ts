@@ -21,7 +21,7 @@ export class SearchController implements Routes {
   public initRoutes() {
     this.controller.openapi(
       createRoute({
-        method: 'get',
+        method: 'get' as const,
         path: '/search',
         tags: ['Search'],
         summary: 'Global search',
@@ -68,7 +68,7 @@ export class SearchController implements Routes {
 
     this.controller.openapi(
       createRoute({
-        method: 'get',
+        method: 'get' as const,
         path: '/search/songs',
         tags: ['Search'],
         summary: 'Search for songs',
@@ -129,7 +129,7 @@ export class SearchController implements Routes {
 
     this.controller.openapi(
       createRoute({
-        method: 'get',
+        method: 'get' as const,
         path: '/search/albums',
         tags: ['Search'],
         summary: 'Search for albums',
@@ -187,7 +187,7 @@ export class SearchController implements Routes {
 
     this.controller.openapi(
       createRoute({
-        method: 'get',
+        method: 'get' as const,
         path: '/search/artists',
         tags: ['Search'],
         summary: 'Search for artists',
@@ -248,7 +248,7 @@ export class SearchController implements Routes {
 
     this.controller.openapi(
       createRoute({
-        method: 'get',
+        method: 'get' as const,
         path: '/search/playlists',
         tags: ['Search'],
         summary: 'Search for playlists',

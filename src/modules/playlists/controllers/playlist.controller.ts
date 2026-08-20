@@ -15,7 +15,7 @@ export class PlaylistController implements Routes {
   public initRoutes() {
     this.controller.openapi(
       createRoute({
-        method: 'get',
+        method: 'get' as const,
         path: '/playlists',
         tags: ['Playlist'],
         summary: 'Retrieve a playlist by ID or link',
